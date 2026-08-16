@@ -60,3 +60,7 @@ models/*.safetensors
 *.key
 credentials.json
 service-account*.json
+
+# Generated model training artifacts
+models/checkpoints/
+models/training_history.json
