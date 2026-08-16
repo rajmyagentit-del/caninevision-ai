@@ -1,0 +1,105 @@
+{
+  "project": "CanineVision AI",
+  "version": "0.1.0",
+  "description": "Registry of datasets evaluated for dog breed image classification and related computer vision tasks.",
+  "last_reviewed": "2026-08-16",
+
+  "policy": {
+    "unknown_license": "do_not_use",
+    "unverified_redistribution": "do_not_redistribute",
+    "repository_policy": "Do not commit large datasets directly to the GitHub repository unless redistribution rights are explicitly verified.",
+    "source_policy": "Prefer official dataset sources and original research publications."
+  },
+
+  "datasets": [
+    {
+      "id": "stanford_dogs",
+      "name": "Stanford Dogs",
+      "category": "dog_breed_classification",
+      "role": "primary_breed_classification_candidate",
+      "official_source": "https://vision.stanford.edu/aditya86/ImageNetDogs/",
+      "known_classes": 120,
+      "known_images": 20580,
+      "annotations": [
+        "breed_label",
+        "bounding_box"
+      ],
+      "license_status": "requires_source_specific_review",
+      "redistribution_status": "do_not_redistribute_without_verification",
+      "recommended_use": "Fine-grained dog breed classification training and benchmarking.",
+      "status": "candidate"
+    },
+
+    {
+      "id": "oxford_iiit_pet",
+      "name": "Oxford-IIIT Pet",
+      "category": "pet_breed_classification",
+      "role": "secondary_training_and_evaluation",
+      "official_source": "https://www.robots.ox.ac.uk/~vgg/data/pets/",
+      "known_classes": 37,
+      "known_images": 7390,
+      "annotations": [
+        "species",
+        "breed",
+        "head_roi",
+        "segmentation"
+      ],
+      "license_status": "CC_BY_SA_4_0",
+      "redistribution_status": "subject_to_license_requirements",
+      "recommended_use": "Secondary training, evaluation, and robustness testing.",
+      "status": "candidate"
+    },
+
+    {
+      "id": "dog_ceo",
+      "name": "Dog CEO API",
+      "category": "dog_image_source",
+      "role": "additional_breed_image_source",
+      "official_source": "https://dog.ceo/dog-api/",
+      "known_classes": null,
+      "known_images": null,
+      "annotations": [
+        "breed",
+        "sub_breed"
+      ],
+      "license_status": "source_and_underlying_image_rights_require_review",
+      "redistribution_status": "do_not_redistribute_without_verification",
+      "recommended_use": "Additional image diversity and breed/sub-breed coverage.",
+      "status": "candidate"
+    },
+
+    {
+      "id": "kaggle_dog_breed_identification",
+      "name": "Kaggle Dog Breed Identification",
+      "category": "dog_breed_classification",
+      "role": "additional_training_or_evaluation_candidate",
+      "official_source": "https://www.kaggle.com/competitions/dog-breed-identification",
+      "known_classes": 120,
+      "known_images": null,
+      "annotations": [
+        "breed_label"
+      ],
+      "license_status": "requires_terms_review",
+      "redistribution_status": "do_not_redistribute_without_verification",
+      "recommended_use": "Additional training or independent evaluation after terms review.",
+      "status": "pending_review"
+    },
+
+    {
+      "id": "dogflw",
+      "name": "DogFLW",
+      "category": "dog_facial_landmarks",
+      "role": "optional_future_facial_landmark_experiment",
+      "official_source": "https://arxiv.org/abs/2405.11501",
+      "known_images": 3274,
+      "known_classes": null,
+      "annotations": [
+        "46_facial_landmarks"
+      ],
+      "license_status": "requires_author_and_license_verification",
+      "redistribution_status": "do_not_redistribute_without_verification",
+      "recommended_use": "Optional future dog-face landmark/localization research.",
+      "status": "optional"
+    }
+  ]
+}

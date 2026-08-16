@@ -1,0 +1,44 @@
+{
+  "project": "CanineVision AI",
+  "version": "0.1.0",
+  "description": "Canonical dog breed taxonomy used to normalize breed labels across datasets, model outputs, the knowledge base, and the API.",
+  "last_updated": "2026-08-16",
+
+  "normalization_policy": {
+    "canonical_id_format": "lowercase_snake_case",
+    "canonical_name_format": "human_readable",
+    "case_insensitive_matching": true,
+    "replace_spaces_with_underscores_for_ids": true,
+    "preserve_source_labels": true,
+    "unknown_breed_id": "unknown",
+    "mixed_breed_id": "mixed_breed"
+  },
+
+  "special_classes": [
+    {
+      "breed_id": "unknown",
+      "canonical_name": "Unknown / Unsupported Breed",
+      "description": "Used when the system cannot confidently map an image to a supported breed."
+    },
+    {
+      "breed_id": "mixed_breed",
+      "canonical_name": "Possible Mixed Breed",
+      "description": "Used when visual evidence suggests multiple breed similarities and a reliable purebred classification cannot be made."
+    }
+  ],
+
+  "breed_schema": {
+    "breed_id": "Unique canonical lowercase snake_case identifier.",
+    "canonical_name": "Preferred human-readable breed name.",
+    "aliases": "Alternative names and spellings.",
+    "dataset_labels": "Original labels used by individual datasets.",
+    "origin_country": "Country of breed origin when verified.",
+    "origin_region": "More specific origin region when verified.",
+    "breed_group": "Breed group or classification when available.",
+    "supported_by_model": "Whether the current production classifier directly supports this breed.",
+    "knowledge_available": "Whether structured breed knowledge has been added.",
+    "sources": "References supporting taxonomy metadata."
+  },
+
+  "breeds": []
+}
