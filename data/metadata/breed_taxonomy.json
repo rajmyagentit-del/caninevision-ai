@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Canonical dog breed taxonomy used to normalize breed labels across datasets, model outputs, the knowledge base, and the API.",
   "last_updated": "2026-08-16",
-
   "normalization_policy": {
     "canonical_id_format": "lowercase_snake_case",
     "canonical_name_format": "human_readable",
@@ -13,7 +12,6 @@
     "unknown_breed_id": "unknown",
     "mixed_breed_id": "mixed_breed"
   },
-
   "special_classes": [
     {
       "breed_id": "unknown",
@@ -26,7 +24,6 @@
       "description": "Used when visual evidence suggests multiple breed similarities and a reliable purebred classification cannot be made."
     }
   ],
-
   "breed_schema": {
     "breed_id": "Unique canonical lowercase snake_case identifier.",
     "canonical_name": "Preferred human-readable breed name.",
@@ -39,6 +36,3126 @@
     "knowledge_available": "Whether structured breed knowledge has been added.",
     "sources": "References supporting taxonomy metadata."
   },
-
-  "breeds": []
+  "breeds": [
+    {
+      "breed_id": "chihuahua",
+      "canonical_name": "Chihuahua",
+      "aliases": [
+        "Chihuahua"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 1,
+          "source_directory": "n02085620-Chihuahua",
+          "imagenet_id": "n02085620"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "japanese_spaniel",
+      "canonical_name": "Japanese spaniel",
+      "aliases": [
+        "Japanese spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 2,
+          "source_directory": "n02085782-Japanese_spaniel",
+          "imagenet_id": "n02085782"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "maltese_dog",
+      "canonical_name": "Maltese dog",
+      "aliases": [
+        "Maltese dog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 3,
+          "source_directory": "n02085936-Maltese_dog",
+          "imagenet_id": "n02085936"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "pekinese",
+      "canonical_name": "Pekinese",
+      "aliases": [
+        "Pekinese"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 4,
+          "source_directory": "n02086079-Pekinese",
+          "imagenet_id": "n02086079"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "shih_tzu",
+      "canonical_name": "Shih-Tzu",
+      "aliases": [
+        "Shih-Tzu"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 5,
+          "source_directory": "n02086240-Shih-Tzu",
+          "imagenet_id": "n02086240"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "blenheim_spaniel",
+      "canonical_name": "Blenheim spaniel",
+      "aliases": [
+        "Blenheim spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 6,
+          "source_directory": "n02086646-Blenheim_spaniel",
+          "imagenet_id": "n02086646"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "papillon",
+      "canonical_name": "papillon",
+      "aliases": [
+        "papillon"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 7,
+          "source_directory": "n02086910-papillon",
+          "imagenet_id": "n02086910"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "toy_terrier",
+      "canonical_name": "toy terrier",
+      "aliases": [
+        "toy terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 8,
+          "source_directory": "n02087046-toy_terrier",
+          "imagenet_id": "n02087046"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "rhodesian_ridgeback",
+      "canonical_name": "Rhodesian ridgeback",
+      "aliases": [
+        "Rhodesian ridgeback"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 9,
+          "source_directory": "n02087394-Rhodesian_ridgeback",
+          "imagenet_id": "n02087394"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "afghan_hound",
+      "canonical_name": "Afghan hound",
+      "aliases": [
+        "Afghan hound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 10,
+          "source_directory": "n02088094-Afghan_hound",
+          "imagenet_id": "n02088094"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "basset",
+      "canonical_name": "basset",
+      "aliases": [
+        "basset"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 11,
+          "source_directory": "n02088238-basset",
+          "imagenet_id": "n02088238"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "beagle",
+      "canonical_name": "beagle",
+      "aliases": [
+        "beagle"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 12,
+          "source_directory": "n02088364-beagle",
+          "imagenet_id": "n02088364"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bloodhound",
+      "canonical_name": "bloodhound",
+      "aliases": [
+        "bloodhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 13,
+          "source_directory": "n02088466-bloodhound",
+          "imagenet_id": "n02088466"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bluetick",
+      "canonical_name": "bluetick",
+      "aliases": [
+        "bluetick"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 14,
+          "source_directory": "n02088632-bluetick",
+          "imagenet_id": "n02088632"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "black_and_tan_coonhound",
+      "canonical_name": "black-and-tan coonhound",
+      "aliases": [
+        "black-and-tan coonhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 15,
+          "source_directory": "n02089078-black-and-tan_coonhound",
+          "imagenet_id": "n02089078"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "walker_hound",
+      "canonical_name": "Walker hound",
+      "aliases": [
+        "Walker hound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 16,
+          "source_directory": "n02089867-Walker_hound",
+          "imagenet_id": "n02089867"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "english_foxhound",
+      "canonical_name": "English foxhound",
+      "aliases": [
+        "English foxhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 17,
+          "source_directory": "n02089973-English_foxhound",
+          "imagenet_id": "n02089973"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "redbone",
+      "canonical_name": "redbone",
+      "aliases": [
+        "redbone"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 18,
+          "source_directory": "n02090379-redbone",
+          "imagenet_id": "n02090379"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "borzoi",
+      "canonical_name": "borzoi",
+      "aliases": [
+        "borzoi"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 19,
+          "source_directory": "n02090622-borzoi",
+          "imagenet_id": "n02090622"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "irish_wolfhound",
+      "canonical_name": "Irish wolfhound",
+      "aliases": [
+        "Irish wolfhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 20,
+          "source_directory": "n02090721-Irish_wolfhound",
+          "imagenet_id": "n02090721"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "italian_greyhound",
+      "canonical_name": "Italian greyhound",
+      "aliases": [
+        "Italian greyhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 21,
+          "source_directory": "n02091032-Italian_greyhound",
+          "imagenet_id": "n02091032"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "whippet",
+      "canonical_name": "whippet",
+      "aliases": [
+        "whippet"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 22,
+          "source_directory": "n02091134-whippet",
+          "imagenet_id": "n02091134"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "ibizan_hound",
+      "canonical_name": "Ibizan hound",
+      "aliases": [
+        "Ibizan hound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 23,
+          "source_directory": "n02091244-Ibizan_hound",
+          "imagenet_id": "n02091244"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "norwegian_elkhound",
+      "canonical_name": "Norwegian elkhound",
+      "aliases": [
+        "Norwegian elkhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 24,
+          "source_directory": "n02091467-Norwegian_elkhound",
+          "imagenet_id": "n02091467"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "otterhound",
+      "canonical_name": "otterhound",
+      "aliases": [
+        "otterhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 25,
+          "source_directory": "n02091635-otterhound",
+          "imagenet_id": "n02091635"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "saluki",
+      "canonical_name": "Saluki",
+      "aliases": [
+        "Saluki"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 26,
+          "source_directory": "n02091831-Saluki",
+          "imagenet_id": "n02091831"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "scottish_deerhound",
+      "canonical_name": "Scottish deerhound",
+      "aliases": [
+        "Scottish deerhound"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 27,
+          "source_directory": "n02092002-Scottish_deerhound",
+          "imagenet_id": "n02092002"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "weimaraner",
+      "canonical_name": "Weimaraner",
+      "aliases": [
+        "Weimaraner"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 28,
+          "source_directory": "n02092339-Weimaraner",
+          "imagenet_id": "n02092339"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "staffordshire_bullterrier",
+      "canonical_name": "Staffordshire bullterrier",
+      "aliases": [
+        "Staffordshire bullterrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 29,
+          "source_directory": "n02093256-Staffordshire_bullterrier",
+          "imagenet_id": "n02093256"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "american_staffordshire_terrier",
+      "canonical_name": "American Staffordshire terrier",
+      "aliases": [
+        "American Staffordshire terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 30,
+          "source_directory": "n02093428-American_Staffordshire_terrier",
+          "imagenet_id": "n02093428"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bedlington_terrier",
+      "canonical_name": "Bedlington terrier",
+      "aliases": [
+        "Bedlington terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 31,
+          "source_directory": "n02093647-Bedlington_terrier",
+          "imagenet_id": "n02093647"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "border_terrier",
+      "canonical_name": "Border terrier",
+      "aliases": [
+        "Border terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 32,
+          "source_directory": "n02093754-Border_terrier",
+          "imagenet_id": "n02093754"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "kerry_blue_terrier",
+      "canonical_name": "Kerry blue terrier",
+      "aliases": [
+        "Kerry blue terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 33,
+          "source_directory": "n02093859-Kerry_blue_terrier",
+          "imagenet_id": "n02093859"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "irish_terrier",
+      "canonical_name": "Irish terrier",
+      "aliases": [
+        "Irish terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 34,
+          "source_directory": "n02093991-Irish_terrier",
+          "imagenet_id": "n02093991"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "norfolk_terrier",
+      "canonical_name": "Norfolk terrier",
+      "aliases": [
+        "Norfolk terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 35,
+          "source_directory": "n02094114-Norfolk_terrier",
+          "imagenet_id": "n02094114"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "norwich_terrier",
+      "canonical_name": "Norwich terrier",
+      "aliases": [
+        "Norwich terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 36,
+          "source_directory": "n02094258-Norwich_terrier",
+          "imagenet_id": "n02094258"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "yorkshire_terrier",
+      "canonical_name": "Yorkshire terrier",
+      "aliases": [
+        "Yorkshire terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 37,
+          "source_directory": "n02094433-Yorkshire_terrier",
+          "imagenet_id": "n02094433"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "wire_haired_fox_terrier",
+      "canonical_name": "wire-haired fox terrier",
+      "aliases": [
+        "wire-haired fox terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 38,
+          "source_directory": "n02095314-wire-haired_fox_terrier",
+          "imagenet_id": "n02095314"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "lakeland_terrier",
+      "canonical_name": "Lakeland terrier",
+      "aliases": [
+        "Lakeland terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 39,
+          "source_directory": "n02095570-Lakeland_terrier",
+          "imagenet_id": "n02095570"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "sealyham_terrier",
+      "canonical_name": "Sealyham terrier",
+      "aliases": [
+        "Sealyham terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 40,
+          "source_directory": "n02095889-Sealyham_terrier",
+          "imagenet_id": "n02095889"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "airedale",
+      "canonical_name": "Airedale",
+      "aliases": [
+        "Airedale"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 41,
+          "source_directory": "n02096051-Airedale",
+          "imagenet_id": "n02096051"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "cairn",
+      "canonical_name": "cairn",
+      "aliases": [
+        "cairn"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 42,
+          "source_directory": "n02096177-cairn",
+          "imagenet_id": "n02096177"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "australian_terrier",
+      "canonical_name": "Australian terrier",
+      "aliases": [
+        "Australian terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 43,
+          "source_directory": "n02096294-Australian_terrier",
+          "imagenet_id": "n02096294"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "dandie_dinmont",
+      "canonical_name": "Dandie Dinmont",
+      "aliases": [
+        "Dandie Dinmont"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 44,
+          "source_directory": "n02096437-Dandie_Dinmont",
+          "imagenet_id": "n02096437"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "boston_bull",
+      "canonical_name": "Boston bull",
+      "aliases": [
+        "Boston bull"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 45,
+          "source_directory": "n02096585-Boston_bull",
+          "imagenet_id": "n02096585"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "miniature_schnauzer",
+      "canonical_name": "miniature schnauzer",
+      "aliases": [
+        "miniature schnauzer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 46,
+          "source_directory": "n02097047-miniature_schnauzer",
+          "imagenet_id": "n02097047"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "giant_schnauzer",
+      "canonical_name": "giant schnauzer",
+      "aliases": [
+        "giant schnauzer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 47,
+          "source_directory": "n02097130-giant_schnauzer",
+          "imagenet_id": "n02097130"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "standard_schnauzer",
+      "canonical_name": "standard schnauzer",
+      "aliases": [
+        "standard schnauzer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 48,
+          "source_directory": "n02097209-standard_schnauzer",
+          "imagenet_id": "n02097209"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "scotch_terrier",
+      "canonical_name": "Scotch terrier",
+      "aliases": [
+        "Scotch terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 49,
+          "source_directory": "n02097298-Scotch_terrier",
+          "imagenet_id": "n02097298"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "tibetan_terrier",
+      "canonical_name": "Tibetan terrier",
+      "aliases": [
+        "Tibetan terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 50,
+          "source_directory": "n02097474-Tibetan_terrier",
+          "imagenet_id": "n02097474"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "silky_terrier",
+      "canonical_name": "silky terrier",
+      "aliases": [
+        "silky terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 51,
+          "source_directory": "n02097658-silky_terrier",
+          "imagenet_id": "n02097658"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "soft_coated_wheaten_terrier",
+      "canonical_name": "soft-coated wheaten terrier",
+      "aliases": [
+        "soft-coated wheaten terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 52,
+          "source_directory": "n02098105-soft-coated_wheaten_terrier",
+          "imagenet_id": "n02098105"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "west_highland_white_terrier",
+      "canonical_name": "West Highland white terrier",
+      "aliases": [
+        "West Highland white terrier"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 53,
+          "source_directory": "n02098286-West_Highland_white_terrier",
+          "imagenet_id": "n02098286"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "lhasa",
+      "canonical_name": "Lhasa",
+      "aliases": [
+        "Lhasa"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 54,
+          "source_directory": "n02098413-Lhasa",
+          "imagenet_id": "n02098413"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "flat_coated_retriever",
+      "canonical_name": "flat-coated retriever",
+      "aliases": [
+        "flat-coated retriever"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 55,
+          "source_directory": "n02099267-flat-coated_retriever",
+          "imagenet_id": "n02099267"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "curly_coated_retriever",
+      "canonical_name": "curly-coated retriever",
+      "aliases": [
+        "curly-coated retriever"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 56,
+          "source_directory": "n02099429-curly-coated_retriever",
+          "imagenet_id": "n02099429"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "golden_retriever",
+      "canonical_name": "golden retriever",
+      "aliases": [
+        "golden retriever"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 57,
+          "source_directory": "n02099601-golden_retriever",
+          "imagenet_id": "n02099601"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "labrador_retriever",
+      "canonical_name": "Labrador retriever",
+      "aliases": [
+        "Labrador retriever"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 58,
+          "source_directory": "n02099712-Labrador_retriever",
+          "imagenet_id": "n02099712"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "chesapeake_bay_retriever",
+      "canonical_name": "Chesapeake Bay retriever",
+      "aliases": [
+        "Chesapeake Bay retriever"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 59,
+          "source_directory": "n02099849-Chesapeake_Bay_retriever",
+          "imagenet_id": "n02099849"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "german_short_haired_pointer",
+      "canonical_name": "German short-haired pointer",
+      "aliases": [
+        "German short-haired pointer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 60,
+          "source_directory": "n02100236-German_short-haired_pointer",
+          "imagenet_id": "n02100236"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "vizsla",
+      "canonical_name": "vizsla",
+      "aliases": [
+        "vizsla"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 61,
+          "source_directory": "n02100583-vizsla",
+          "imagenet_id": "n02100583"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "english_setter",
+      "canonical_name": "English setter",
+      "aliases": [
+        "English setter"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 62,
+          "source_directory": "n02100735-English_setter",
+          "imagenet_id": "n02100735"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "irish_setter",
+      "canonical_name": "Irish setter",
+      "aliases": [
+        "Irish setter"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 63,
+          "source_directory": "n02100877-Irish_setter",
+          "imagenet_id": "n02100877"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "gordon_setter",
+      "canonical_name": "Gordon setter",
+      "aliases": [
+        "Gordon setter"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 64,
+          "source_directory": "n02101006-Gordon_setter",
+          "imagenet_id": "n02101006"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "brittany_spaniel",
+      "canonical_name": "Brittany spaniel",
+      "aliases": [
+        "Brittany spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 65,
+          "source_directory": "n02101388-Brittany_spaniel",
+          "imagenet_id": "n02101388"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "clumber",
+      "canonical_name": "clumber",
+      "aliases": [
+        "clumber"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 66,
+          "source_directory": "n02101556-clumber",
+          "imagenet_id": "n02101556"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "english_springer",
+      "canonical_name": "English springer",
+      "aliases": [
+        "English springer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 67,
+          "source_directory": "n02102040-English_springer",
+          "imagenet_id": "n02102040"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "welsh_springer_spaniel",
+      "canonical_name": "Welsh springer spaniel",
+      "aliases": [
+        "Welsh springer spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 68,
+          "source_directory": "n02102177-Welsh_springer_spaniel",
+          "imagenet_id": "n02102177"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "cocker_spaniel",
+      "canonical_name": "cocker spaniel",
+      "aliases": [
+        "cocker spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 69,
+          "source_directory": "n02102318-cocker_spaniel",
+          "imagenet_id": "n02102318"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "sussex_spaniel",
+      "canonical_name": "Sussex spaniel",
+      "aliases": [
+        "Sussex spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 70,
+          "source_directory": "n02102480-Sussex_spaniel",
+          "imagenet_id": "n02102480"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "irish_water_spaniel",
+      "canonical_name": "Irish water spaniel",
+      "aliases": [
+        "Irish water spaniel"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 71,
+          "source_directory": "n02102973-Irish_water_spaniel",
+          "imagenet_id": "n02102973"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "kuvasz",
+      "canonical_name": "kuvasz",
+      "aliases": [
+        "kuvasz"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 72,
+          "source_directory": "n02104029-kuvasz",
+          "imagenet_id": "n02104029"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "schipperke",
+      "canonical_name": "schipperke",
+      "aliases": [
+        "schipperke"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 73,
+          "source_directory": "n02104365-schipperke",
+          "imagenet_id": "n02104365"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "groenendael",
+      "canonical_name": "groenendael",
+      "aliases": [
+        "groenendael"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 74,
+          "source_directory": "n02105056-groenendael",
+          "imagenet_id": "n02105056"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "malinois",
+      "canonical_name": "malinois",
+      "aliases": [
+        "malinois"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 75,
+          "source_directory": "n02105162-malinois",
+          "imagenet_id": "n02105162"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "briard",
+      "canonical_name": "briard",
+      "aliases": [
+        "briard"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 76,
+          "source_directory": "n02105251-briard",
+          "imagenet_id": "n02105251"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "kelpie",
+      "canonical_name": "kelpie",
+      "aliases": [
+        "kelpie"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 77,
+          "source_directory": "n02105412-kelpie",
+          "imagenet_id": "n02105412"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "komondor",
+      "canonical_name": "komondor",
+      "aliases": [
+        "komondor"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 78,
+          "source_directory": "n02105505-komondor",
+          "imagenet_id": "n02105505"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "old_english_sheepdog",
+      "canonical_name": "Old English sheepdog",
+      "aliases": [
+        "Old English sheepdog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 79,
+          "source_directory": "n02105641-Old_English_sheepdog",
+          "imagenet_id": "n02105641"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "shetland_sheepdog",
+      "canonical_name": "Shetland sheepdog",
+      "aliases": [
+        "Shetland sheepdog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 80,
+          "source_directory": "n02105855-Shetland_sheepdog",
+          "imagenet_id": "n02105855"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "collie",
+      "canonical_name": "collie",
+      "aliases": [
+        "collie"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 81,
+          "source_directory": "n02106030-collie",
+          "imagenet_id": "n02106030"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "border_collie",
+      "canonical_name": "Border collie",
+      "aliases": [
+        "Border collie"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 82,
+          "source_directory": "n02106166-Border_collie",
+          "imagenet_id": "n02106166"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bouvier_des_flandres",
+      "canonical_name": "Bouvier des Flandres",
+      "aliases": [
+        "Bouvier des Flandres"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 83,
+          "source_directory": "n02106382-Bouvier_des_Flandres",
+          "imagenet_id": "n02106382"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "rottweiler",
+      "canonical_name": "Rottweiler",
+      "aliases": [
+        "Rottweiler"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 84,
+          "source_directory": "n02106550-Rottweiler",
+          "imagenet_id": "n02106550"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "german_shepherd",
+      "canonical_name": "German shepherd",
+      "aliases": [
+        "German shepherd"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 85,
+          "source_directory": "n02106662-German_shepherd",
+          "imagenet_id": "n02106662"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "doberman",
+      "canonical_name": "Doberman",
+      "aliases": [
+        "Doberman"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 86,
+          "source_directory": "n02107142-Doberman",
+          "imagenet_id": "n02107142"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "miniature_pinscher",
+      "canonical_name": "miniature pinscher",
+      "aliases": [
+        "miniature pinscher"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 87,
+          "source_directory": "n02107312-miniature_pinscher",
+          "imagenet_id": "n02107312"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "greater_swiss_mountain_dog",
+      "canonical_name": "Greater Swiss Mountain dog",
+      "aliases": [
+        "Greater Swiss Mountain dog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 88,
+          "source_directory": "n02107574-Greater_Swiss_Mountain_dog",
+          "imagenet_id": "n02107574"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bernese_mountain_dog",
+      "canonical_name": "Bernese mountain dog",
+      "aliases": [
+        "Bernese mountain dog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 89,
+          "source_directory": "n02107683-Bernese_mountain_dog",
+          "imagenet_id": "n02107683"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "appenzeller",
+      "canonical_name": "Appenzeller",
+      "aliases": [
+        "Appenzeller"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 90,
+          "source_directory": "n02107908-Appenzeller",
+          "imagenet_id": "n02107908"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "entlebucher",
+      "canonical_name": "EntleBucher",
+      "aliases": [
+        "EntleBucher"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 91,
+          "source_directory": "n02108000-EntleBucher",
+          "imagenet_id": "n02108000"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "boxer",
+      "canonical_name": "boxer",
+      "aliases": [
+        "boxer"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 92,
+          "source_directory": "n02108089-boxer",
+          "imagenet_id": "n02108089"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "bull_mastiff",
+      "canonical_name": "bull mastiff",
+      "aliases": [
+        "bull mastiff"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 93,
+          "source_directory": "n02108422-bull_mastiff",
+          "imagenet_id": "n02108422"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "tibetan_mastiff",
+      "canonical_name": "Tibetan mastiff",
+      "aliases": [
+        "Tibetan mastiff"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 94,
+          "source_directory": "n02108551-Tibetan_mastiff",
+          "imagenet_id": "n02108551"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "french_bulldog",
+      "canonical_name": "French bulldog",
+      "aliases": [
+        "French bulldog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 95,
+          "source_directory": "n02108915-French_bulldog",
+          "imagenet_id": "n02108915"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "great_dane",
+      "canonical_name": "Great Dane",
+      "aliases": [
+        "Great Dane"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 96,
+          "source_directory": "n02109047-Great_Dane",
+          "imagenet_id": "n02109047"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "saint_bernard",
+      "canonical_name": "Saint Bernard",
+      "aliases": [
+        "Saint Bernard"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 97,
+          "source_directory": "n02109525-Saint_Bernard",
+          "imagenet_id": "n02109525"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "eskimo_dog",
+      "canonical_name": "Eskimo dog",
+      "aliases": [
+        "Eskimo dog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 98,
+          "source_directory": "n02109961-Eskimo_dog",
+          "imagenet_id": "n02109961"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "malamute",
+      "canonical_name": "malamute",
+      "aliases": [
+        "malamute"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 99,
+          "source_directory": "n02110063-malamute",
+          "imagenet_id": "n02110063"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "siberian_husky",
+      "canonical_name": "Siberian husky",
+      "aliases": [
+        "Siberian husky"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 100,
+          "source_directory": "n02110185-Siberian_husky",
+          "imagenet_id": "n02110185"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "affenpinscher",
+      "canonical_name": "affenpinscher",
+      "aliases": [
+        "affenpinscher"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 101,
+          "source_directory": "n02110627-affenpinscher",
+          "imagenet_id": "n02110627"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "basenji",
+      "canonical_name": "basenji",
+      "aliases": [
+        "basenji"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 102,
+          "source_directory": "n02110806-basenji",
+          "imagenet_id": "n02110806"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "pug",
+      "canonical_name": "pug",
+      "aliases": [
+        "pug"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 103,
+          "source_directory": "n02110958-pug",
+          "imagenet_id": "n02110958"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "leonberg",
+      "canonical_name": "Leonberg",
+      "aliases": [
+        "Leonberg"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 104,
+          "source_directory": "n02111129-Leonberg",
+          "imagenet_id": "n02111129"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "newfoundland",
+      "canonical_name": "Newfoundland",
+      "aliases": [
+        "Newfoundland"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 105,
+          "source_directory": "n02111277-Newfoundland",
+          "imagenet_id": "n02111277"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "great_pyrenees",
+      "canonical_name": "Great Pyrenees",
+      "aliases": [
+        "Great Pyrenees"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 106,
+          "source_directory": "n02111500-Great_Pyrenees",
+          "imagenet_id": "n02111500"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "samoyed",
+      "canonical_name": "Samoyed",
+      "aliases": [
+        "Samoyed"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 107,
+          "source_directory": "n02111889-Samoyed",
+          "imagenet_id": "n02111889"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "pomeranian",
+      "canonical_name": "Pomeranian",
+      "aliases": [
+        "Pomeranian"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 108,
+          "source_directory": "n02112018-Pomeranian",
+          "imagenet_id": "n02112018"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "chow",
+      "canonical_name": "chow",
+      "aliases": [
+        "chow"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 109,
+          "source_directory": "n02112137-chow",
+          "imagenet_id": "n02112137"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "keeshond",
+      "canonical_name": "keeshond",
+      "aliases": [
+        "keeshond"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 110,
+          "source_directory": "n02112350-keeshond",
+          "imagenet_id": "n02112350"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "brabancon_griffon",
+      "canonical_name": "Brabancon griffon",
+      "aliases": [
+        "Brabancon griffon"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 111,
+          "source_directory": "n02112706-Brabancon_griffon",
+          "imagenet_id": "n02112706"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "pembroke",
+      "canonical_name": "Pembroke",
+      "aliases": [
+        "Pembroke"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 112,
+          "source_directory": "n02113023-Pembroke",
+          "imagenet_id": "n02113023"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "cardigan",
+      "canonical_name": "Cardigan",
+      "aliases": [
+        "Cardigan"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 113,
+          "source_directory": "n02113186-Cardigan",
+          "imagenet_id": "n02113186"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "toy_poodle",
+      "canonical_name": "toy poodle",
+      "aliases": [
+        "toy poodle"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 114,
+          "source_directory": "n02113624-toy_poodle",
+          "imagenet_id": "n02113624"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "miniature_poodle",
+      "canonical_name": "miniature poodle",
+      "aliases": [
+        "miniature poodle"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 115,
+          "source_directory": "n02113712-miniature_poodle",
+          "imagenet_id": "n02113712"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "standard_poodle",
+      "canonical_name": "standard poodle",
+      "aliases": [
+        "standard poodle"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 116,
+          "source_directory": "n02113799-standard_poodle",
+          "imagenet_id": "n02113799"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "mexican_hairless",
+      "canonical_name": "Mexican hairless",
+      "aliases": [
+        "Mexican hairless"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 117,
+          "source_directory": "n02113978-Mexican_hairless",
+          "imagenet_id": "n02113978"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "dingo",
+      "canonical_name": "dingo",
+      "aliases": [
+        "dingo"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 118,
+          "source_directory": "n02115641-dingo",
+          "imagenet_id": "n02115641"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "dhole",
+      "canonical_name": "dhole",
+      "aliases": [
+        "dhole"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 119,
+          "source_directory": "n02115913-dhole",
+          "imagenet_id": "n02115913"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    },
+    {
+      "breed_id": "african_hunting_dog",
+      "canonical_name": "African hunting dog",
+      "aliases": [
+        "African hunting dog"
+      ],
+      "dataset_labels": {
+        "stanford_dogs": {
+          "numeric_label": 120,
+          "source_directory": "n02116738-African_hunting_dog",
+          "imagenet_id": "n02116738"
+        }
+      },
+      "origin_country": null,
+      "origin_region": null,
+      "breed_group": null,
+      "supported_by_model": true,
+      "knowledge_available": false,
+      "sources": [
+        {
+          "type": "dataset",
+          "dataset_id": "stanford_dogs",
+          "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/"
+        }
+      ]
+    }
+  ]
 }

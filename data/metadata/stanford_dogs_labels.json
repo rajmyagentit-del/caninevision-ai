@@ -1,0 +1,969 @@
+{
+  "dataset_id": "stanford_dogs",
+  "source": "https://vision.stanford.edu/aditya86/ImageNetDogs/",
+  "breed_count": 120,
+  "image_count": 20580,
+  "generated_from": "file_list.mat",
+  "breeds": [
+    {
+      "stanford_label": 1,
+      "breed_id": "chihuahua",
+      "canonical_name": "Chihuahua",
+      "imagenet_id": "n02085620",
+      "source_directory": "n02085620-Chihuahua",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 2,
+      "breed_id": "japanese_spaniel",
+      "canonical_name": "Japanese spaniel",
+      "imagenet_id": "n02085782",
+      "source_directory": "n02085782-Japanese_spaniel",
+      "image_count": 185
+    },
+    {
+      "stanford_label": 3,
+      "breed_id": "maltese_dog",
+      "canonical_name": "Maltese dog",
+      "imagenet_id": "n02085936",
+      "source_directory": "n02085936-Maltese_dog",
+      "image_count": 252
+    },
+    {
+      "stanford_label": 4,
+      "breed_id": "pekinese",
+      "canonical_name": "Pekinese",
+      "imagenet_id": "n02086079",
+      "source_directory": "n02086079-Pekinese",
+      "image_count": 149
+    },
+    {
+      "stanford_label": 5,
+      "breed_id": "shih_tzu",
+      "canonical_name": "Shih-Tzu",
+      "imagenet_id": "n02086240",
+      "source_directory": "n02086240-Shih-Tzu",
+      "image_count": 214
+    },
+    {
+      "stanford_label": 6,
+      "breed_id": "blenheim_spaniel",
+      "canonical_name": "Blenheim spaniel",
+      "imagenet_id": "n02086646",
+      "source_directory": "n02086646-Blenheim_spaniel",
+      "image_count": 188
+    },
+    {
+      "stanford_label": 7,
+      "breed_id": "papillon",
+      "canonical_name": "papillon",
+      "imagenet_id": "n02086910",
+      "source_directory": "n02086910-papillon",
+      "image_count": 196
+    },
+    {
+      "stanford_label": 8,
+      "breed_id": "toy_terrier",
+      "canonical_name": "toy terrier",
+      "imagenet_id": "n02087046",
+      "source_directory": "n02087046-toy_terrier",
+      "image_count": 172
+    },
+    {
+      "stanford_label": 9,
+      "breed_id": "rhodesian_ridgeback",
+      "canonical_name": "Rhodesian ridgeback",
+      "imagenet_id": "n02087394",
+      "source_directory": "n02087394-Rhodesian_ridgeback",
+      "image_count": 172
+    },
+    {
+      "stanford_label": 10,
+      "breed_id": "afghan_hound",
+      "canonical_name": "Afghan hound",
+      "imagenet_id": "n02088094",
+      "source_directory": "n02088094-Afghan_hound",
+      "image_count": 239
+    },
+    {
+      "stanford_label": 11,
+      "breed_id": "basset",
+      "canonical_name": "basset",
+      "imagenet_id": "n02088238",
+      "source_directory": "n02088238-basset",
+      "image_count": 175
+    },
+    {
+      "stanford_label": 12,
+      "breed_id": "beagle",
+      "canonical_name": "beagle",
+      "imagenet_id": "n02088364",
+      "source_directory": "n02088364-beagle",
+      "image_count": 195
+    },
+    {
+      "stanford_label": 13,
+      "breed_id": "bloodhound",
+      "canonical_name": "bloodhound",
+      "imagenet_id": "n02088466",
+      "source_directory": "n02088466-bloodhound",
+      "image_count": 187
+    },
+    {
+      "stanford_label": 14,
+      "breed_id": "bluetick",
+      "canonical_name": "bluetick",
+      "imagenet_id": "n02088632",
+      "source_directory": "n02088632-bluetick",
+      "image_count": 171
+    },
+    {
+      "stanford_label": 15,
+      "breed_id": "black_and_tan_coonhound",
+      "canonical_name": "black-and-tan coonhound",
+      "imagenet_id": "n02089078",
+      "source_directory": "n02089078-black-and-tan_coonhound",
+      "image_count": 159
+    },
+    {
+      "stanford_label": 16,
+      "breed_id": "walker_hound",
+      "canonical_name": "Walker hound",
+      "imagenet_id": "n02089867",
+      "source_directory": "n02089867-Walker_hound",
+      "image_count": 153
+    },
+    {
+      "stanford_label": 17,
+      "breed_id": "english_foxhound",
+      "canonical_name": "English foxhound",
+      "imagenet_id": "n02089973",
+      "source_directory": "n02089973-English_foxhound",
+      "image_count": 157
+    },
+    {
+      "stanford_label": 18,
+      "breed_id": "redbone",
+      "canonical_name": "redbone",
+      "imagenet_id": "n02090379",
+      "source_directory": "n02090379-redbone",
+      "image_count": 148
+    },
+    {
+      "stanford_label": 19,
+      "breed_id": "borzoi",
+      "canonical_name": "borzoi",
+      "imagenet_id": "n02090622",
+      "source_directory": "n02090622-borzoi",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 20,
+      "breed_id": "irish_wolfhound",
+      "canonical_name": "Irish wolfhound",
+      "imagenet_id": "n02090721",
+      "source_directory": "n02090721-Irish_wolfhound",
+      "image_count": 218
+    },
+    {
+      "stanford_label": 21,
+      "breed_id": "italian_greyhound",
+      "canonical_name": "Italian greyhound",
+      "imagenet_id": "n02091032",
+      "source_directory": "n02091032-Italian_greyhound",
+      "image_count": 182
+    },
+    {
+      "stanford_label": 22,
+      "breed_id": "whippet",
+      "canonical_name": "whippet",
+      "imagenet_id": "n02091134",
+      "source_directory": "n02091134-whippet",
+      "image_count": 187
+    },
+    {
+      "stanford_label": 23,
+      "breed_id": "ibizan_hound",
+      "canonical_name": "Ibizan hound",
+      "imagenet_id": "n02091244",
+      "source_directory": "n02091244-Ibizan_hound",
+      "image_count": 188
+    },
+    {
+      "stanford_label": 24,
+      "breed_id": "norwegian_elkhound",
+      "canonical_name": "Norwegian elkhound",
+      "imagenet_id": "n02091467",
+      "source_directory": "n02091467-Norwegian_elkhound",
+      "image_count": 196
+    },
+    {
+      "stanford_label": 25,
+      "breed_id": "otterhound",
+      "canonical_name": "otterhound",
+      "imagenet_id": "n02091635",
+      "source_directory": "n02091635-otterhound",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 26,
+      "breed_id": "saluki",
+      "canonical_name": "Saluki",
+      "imagenet_id": "n02091831",
+      "source_directory": "n02091831-Saluki",
+      "image_count": 200
+    },
+    {
+      "stanford_label": 27,
+      "breed_id": "scottish_deerhound",
+      "canonical_name": "Scottish deerhound",
+      "imagenet_id": "n02092002",
+      "source_directory": "n02092002-Scottish_deerhound",
+      "image_count": 232
+    },
+    {
+      "stanford_label": 28,
+      "breed_id": "weimaraner",
+      "canonical_name": "Weimaraner",
+      "imagenet_id": "n02092339",
+      "source_directory": "n02092339-Weimaraner",
+      "image_count": 160
+    },
+    {
+      "stanford_label": 29,
+      "breed_id": "staffordshire_bullterrier",
+      "canonical_name": "Staffordshire bullterrier",
+      "imagenet_id": "n02093256",
+      "source_directory": "n02093256-Staffordshire_bullterrier",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 30,
+      "breed_id": "american_staffordshire_terrier",
+      "canonical_name": "American Staffordshire terrier",
+      "imagenet_id": "n02093428",
+      "source_directory": "n02093428-American_Staffordshire_terrier",
+      "image_count": 164
+    },
+    {
+      "stanford_label": 31,
+      "breed_id": "bedlington_terrier",
+      "canonical_name": "Bedlington terrier",
+      "imagenet_id": "n02093647",
+      "source_directory": "n02093647-Bedlington_terrier",
+      "image_count": 182
+    },
+    {
+      "stanford_label": 32,
+      "breed_id": "border_terrier",
+      "canonical_name": "Border terrier",
+      "imagenet_id": "n02093754",
+      "source_directory": "n02093754-Border_terrier",
+      "image_count": 172
+    },
+    {
+      "stanford_label": 33,
+      "breed_id": "kerry_blue_terrier",
+      "canonical_name": "Kerry blue terrier",
+      "imagenet_id": "n02093859",
+      "source_directory": "n02093859-Kerry_blue_terrier",
+      "image_count": 179
+    },
+    {
+      "stanford_label": 34,
+      "breed_id": "irish_terrier",
+      "canonical_name": "Irish terrier",
+      "imagenet_id": "n02093991",
+      "source_directory": "n02093991-Irish_terrier",
+      "image_count": 169
+    },
+    {
+      "stanford_label": 35,
+      "breed_id": "norfolk_terrier",
+      "canonical_name": "Norfolk terrier",
+      "imagenet_id": "n02094114",
+      "source_directory": "n02094114-Norfolk_terrier",
+      "image_count": 172
+    },
+    {
+      "stanford_label": 36,
+      "breed_id": "norwich_terrier",
+      "canonical_name": "Norwich terrier",
+      "imagenet_id": "n02094258",
+      "source_directory": "n02094258-Norwich_terrier",
+      "image_count": 185
+    },
+    {
+      "stanford_label": 37,
+      "breed_id": "yorkshire_terrier",
+      "canonical_name": "Yorkshire terrier",
+      "imagenet_id": "n02094433",
+      "source_directory": "n02094433-Yorkshire_terrier",
+      "image_count": 164
+    },
+    {
+      "stanford_label": 38,
+      "breed_id": "wire_haired_fox_terrier",
+      "canonical_name": "wire-haired fox terrier",
+      "imagenet_id": "n02095314",
+      "source_directory": "n02095314-wire-haired_fox_terrier",
+      "image_count": 157
+    },
+    {
+      "stanford_label": 39,
+      "breed_id": "lakeland_terrier",
+      "canonical_name": "Lakeland terrier",
+      "imagenet_id": "n02095570",
+      "source_directory": "n02095570-Lakeland_terrier",
+      "image_count": 197
+    },
+    {
+      "stanford_label": 40,
+      "breed_id": "sealyham_terrier",
+      "canonical_name": "Sealyham terrier",
+      "imagenet_id": "n02095889",
+      "source_directory": "n02095889-Sealyham_terrier",
+      "image_count": 202
+    },
+    {
+      "stanford_label": 41,
+      "breed_id": "airedale",
+      "canonical_name": "Airedale",
+      "imagenet_id": "n02096051",
+      "source_directory": "n02096051-Airedale",
+      "image_count": 202
+    },
+    {
+      "stanford_label": 42,
+      "breed_id": "cairn",
+      "canonical_name": "cairn",
+      "imagenet_id": "n02096177",
+      "source_directory": "n02096177-cairn",
+      "image_count": 197
+    },
+    {
+      "stanford_label": 43,
+      "breed_id": "australian_terrier",
+      "canonical_name": "Australian terrier",
+      "imagenet_id": "n02096294",
+      "source_directory": "n02096294-Australian_terrier",
+      "image_count": 196
+    },
+    {
+      "stanford_label": 44,
+      "breed_id": "dandie_dinmont",
+      "canonical_name": "Dandie Dinmont",
+      "imagenet_id": "n02096437",
+      "source_directory": "n02096437-Dandie_Dinmont",
+      "image_count": 180
+    },
+    {
+      "stanford_label": 45,
+      "breed_id": "boston_bull",
+      "canonical_name": "Boston bull",
+      "imagenet_id": "n02096585",
+      "source_directory": "n02096585-Boston_bull",
+      "image_count": 182
+    },
+    {
+      "stanford_label": 46,
+      "breed_id": "miniature_schnauzer",
+      "canonical_name": "miniature schnauzer",
+      "imagenet_id": "n02097047",
+      "source_directory": "n02097047-miniature_schnauzer",
+      "image_count": 154
+    },
+    {
+      "stanford_label": 47,
+      "breed_id": "giant_schnauzer",
+      "canonical_name": "giant schnauzer",
+      "imagenet_id": "n02097130",
+      "source_directory": "n02097130-giant_schnauzer",
+      "image_count": 157
+    },
+    {
+      "stanford_label": 48,
+      "breed_id": "standard_schnauzer",
+      "canonical_name": "standard schnauzer",
+      "imagenet_id": "n02097209",
+      "source_directory": "n02097209-standard_schnauzer",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 49,
+      "breed_id": "scotch_terrier",
+      "canonical_name": "Scotch terrier",
+      "imagenet_id": "n02097298",
+      "source_directory": "n02097298-Scotch_terrier",
+      "image_count": 158
+    },
+    {
+      "stanford_label": 50,
+      "breed_id": "tibetan_terrier",
+      "canonical_name": "Tibetan terrier",
+      "imagenet_id": "n02097474",
+      "source_directory": "n02097474-Tibetan_terrier",
+      "image_count": 206
+    },
+    {
+      "stanford_label": 51,
+      "breed_id": "silky_terrier",
+      "canonical_name": "silky terrier",
+      "imagenet_id": "n02097658",
+      "source_directory": "n02097658-silky_terrier",
+      "image_count": 183
+    },
+    {
+      "stanford_label": 52,
+      "breed_id": "soft_coated_wheaten_terrier",
+      "canonical_name": "soft-coated wheaten terrier",
+      "imagenet_id": "n02098105",
+      "source_directory": "n02098105-soft-coated_wheaten_terrier",
+      "image_count": 156
+    },
+    {
+      "stanford_label": 53,
+      "breed_id": "west_highland_white_terrier",
+      "canonical_name": "West Highland white terrier",
+      "imagenet_id": "n02098286",
+      "source_directory": "n02098286-West_Highland_white_terrier",
+      "image_count": 169
+    },
+    {
+      "stanford_label": 54,
+      "breed_id": "lhasa",
+      "canonical_name": "Lhasa",
+      "imagenet_id": "n02098413",
+      "source_directory": "n02098413-Lhasa",
+      "image_count": 186
+    },
+    {
+      "stanford_label": 55,
+      "breed_id": "flat_coated_retriever",
+      "canonical_name": "flat-coated retriever",
+      "imagenet_id": "n02099267",
+      "source_directory": "n02099267-flat-coated_retriever",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 56,
+      "breed_id": "curly_coated_retriever",
+      "canonical_name": "curly-coated retriever",
+      "imagenet_id": "n02099429",
+      "source_directory": "n02099429-curly-coated_retriever",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 57,
+      "breed_id": "golden_retriever",
+      "canonical_name": "golden retriever",
+      "imagenet_id": "n02099601",
+      "source_directory": "n02099601-golden_retriever",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 58,
+      "breed_id": "labrador_retriever",
+      "canonical_name": "Labrador retriever",
+      "imagenet_id": "n02099712",
+      "source_directory": "n02099712-Labrador_retriever",
+      "image_count": 171
+    },
+    {
+      "stanford_label": 59,
+      "breed_id": "chesapeake_bay_retriever",
+      "canonical_name": "Chesapeake Bay retriever",
+      "imagenet_id": "n02099849",
+      "source_directory": "n02099849-Chesapeake_Bay_retriever",
+      "image_count": 167
+    },
+    {
+      "stanford_label": 60,
+      "breed_id": "german_short_haired_pointer",
+      "canonical_name": "German short-haired pointer",
+      "imagenet_id": "n02100236",
+      "source_directory": "n02100236-German_short-haired_pointer",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 61,
+      "breed_id": "vizsla",
+      "canonical_name": "vizsla",
+      "imagenet_id": "n02100583",
+      "source_directory": "n02100583-vizsla",
+      "image_count": 154
+    },
+    {
+      "stanford_label": 62,
+      "breed_id": "english_setter",
+      "canonical_name": "English setter",
+      "imagenet_id": "n02100735",
+      "source_directory": "n02100735-English_setter",
+      "image_count": 161
+    },
+    {
+      "stanford_label": 63,
+      "breed_id": "irish_setter",
+      "canonical_name": "Irish setter",
+      "imagenet_id": "n02100877",
+      "source_directory": "n02100877-Irish_setter",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 64,
+      "breed_id": "gordon_setter",
+      "canonical_name": "Gordon setter",
+      "imagenet_id": "n02101006",
+      "source_directory": "n02101006-Gordon_setter",
+      "image_count": 153
+    },
+    {
+      "stanford_label": 65,
+      "breed_id": "brittany_spaniel",
+      "canonical_name": "Brittany spaniel",
+      "imagenet_id": "n02101388",
+      "source_directory": "n02101388-Brittany_spaniel",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 66,
+      "breed_id": "clumber",
+      "canonical_name": "clumber",
+      "imagenet_id": "n02101556",
+      "source_directory": "n02101556-clumber",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 67,
+      "breed_id": "english_springer",
+      "canonical_name": "English springer",
+      "imagenet_id": "n02102040",
+      "source_directory": "n02102040-English_springer",
+      "image_count": 159
+    },
+    {
+      "stanford_label": 68,
+      "breed_id": "welsh_springer_spaniel",
+      "canonical_name": "Welsh springer spaniel",
+      "imagenet_id": "n02102177",
+      "source_directory": "n02102177-Welsh_springer_spaniel",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 69,
+      "breed_id": "cocker_spaniel",
+      "canonical_name": "cocker spaniel",
+      "imagenet_id": "n02102318",
+      "source_directory": "n02102318-cocker_spaniel",
+      "image_count": 159
+    },
+    {
+      "stanford_label": 70,
+      "breed_id": "sussex_spaniel",
+      "canonical_name": "Sussex spaniel",
+      "imagenet_id": "n02102480",
+      "source_directory": "n02102480-Sussex_spaniel",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 71,
+      "breed_id": "irish_water_spaniel",
+      "canonical_name": "Irish water spaniel",
+      "imagenet_id": "n02102973",
+      "source_directory": "n02102973-Irish_water_spaniel",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 72,
+      "breed_id": "kuvasz",
+      "canonical_name": "kuvasz",
+      "imagenet_id": "n02104029",
+      "source_directory": "n02104029-kuvasz",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 73,
+      "breed_id": "schipperke",
+      "canonical_name": "schipperke",
+      "imagenet_id": "n02104365",
+      "source_directory": "n02104365-schipperke",
+      "image_count": 154
+    },
+    {
+      "stanford_label": 74,
+      "breed_id": "groenendael",
+      "canonical_name": "groenendael",
+      "imagenet_id": "n02105056",
+      "source_directory": "n02105056-groenendael",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 75,
+      "breed_id": "malinois",
+      "canonical_name": "malinois",
+      "imagenet_id": "n02105162",
+      "source_directory": "n02105162-malinois",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 76,
+      "breed_id": "briard",
+      "canonical_name": "briard",
+      "imagenet_id": "n02105251",
+      "source_directory": "n02105251-briard",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 77,
+      "breed_id": "kelpie",
+      "canonical_name": "kelpie",
+      "imagenet_id": "n02105412",
+      "source_directory": "n02105412-kelpie",
+      "image_count": 153
+    },
+    {
+      "stanford_label": 78,
+      "breed_id": "komondor",
+      "canonical_name": "komondor",
+      "imagenet_id": "n02105505",
+      "source_directory": "n02105505-komondor",
+      "image_count": 154
+    },
+    {
+      "stanford_label": 79,
+      "breed_id": "old_english_sheepdog",
+      "canonical_name": "Old English sheepdog",
+      "imagenet_id": "n02105641",
+      "source_directory": "n02105641-Old_English_sheepdog",
+      "image_count": 169
+    },
+    {
+      "stanford_label": 80,
+      "breed_id": "shetland_sheepdog",
+      "canonical_name": "Shetland sheepdog",
+      "imagenet_id": "n02105855",
+      "source_directory": "n02105855-Shetland_sheepdog",
+      "image_count": 157
+    },
+    {
+      "stanford_label": 81,
+      "breed_id": "collie",
+      "canonical_name": "collie",
+      "imagenet_id": "n02106030",
+      "source_directory": "n02106030-collie",
+      "image_count": 153
+    },
+    {
+      "stanford_label": 82,
+      "breed_id": "border_collie",
+      "canonical_name": "Border collie",
+      "imagenet_id": "n02106166",
+      "source_directory": "n02106166-Border_collie",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 83,
+      "breed_id": "bouvier_des_flandres",
+      "canonical_name": "Bouvier des Flandres",
+      "imagenet_id": "n02106382",
+      "source_directory": "n02106382-Bouvier_des_Flandres",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 84,
+      "breed_id": "rottweiler",
+      "canonical_name": "Rottweiler",
+      "imagenet_id": "n02106550",
+      "source_directory": "n02106550-Rottweiler",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 85,
+      "breed_id": "german_shepherd",
+      "canonical_name": "German shepherd",
+      "imagenet_id": "n02106662",
+      "source_directory": "n02106662-German_shepherd",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 86,
+      "breed_id": "doberman",
+      "canonical_name": "Doberman",
+      "imagenet_id": "n02107142",
+      "source_directory": "n02107142-Doberman",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 87,
+      "breed_id": "miniature_pinscher",
+      "canonical_name": "miniature pinscher",
+      "imagenet_id": "n02107312",
+      "source_directory": "n02107312-miniature_pinscher",
+      "image_count": 184
+    },
+    {
+      "stanford_label": 88,
+      "breed_id": "greater_swiss_mountain_dog",
+      "canonical_name": "Greater Swiss Mountain dog",
+      "imagenet_id": "n02107574",
+      "source_directory": "n02107574-Greater_Swiss_Mountain_dog",
+      "image_count": 168
+    },
+    {
+      "stanford_label": 89,
+      "breed_id": "bernese_mountain_dog",
+      "canonical_name": "Bernese mountain dog",
+      "imagenet_id": "n02107683",
+      "source_directory": "n02107683-Bernese_mountain_dog",
+      "image_count": 218
+    },
+    {
+      "stanford_label": 90,
+      "breed_id": "appenzeller",
+      "canonical_name": "Appenzeller",
+      "imagenet_id": "n02107908",
+      "source_directory": "n02107908-Appenzeller",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 91,
+      "breed_id": "entlebucher",
+      "canonical_name": "EntleBucher",
+      "imagenet_id": "n02108000",
+      "source_directory": "n02108000-EntleBucher",
+      "image_count": 202
+    },
+    {
+      "stanford_label": 92,
+      "breed_id": "boxer",
+      "canonical_name": "boxer",
+      "imagenet_id": "n02108089",
+      "source_directory": "n02108089-boxer",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 93,
+      "breed_id": "bull_mastiff",
+      "canonical_name": "bull mastiff",
+      "imagenet_id": "n02108422",
+      "source_directory": "n02108422-bull_mastiff",
+      "image_count": 156
+    },
+    {
+      "stanford_label": 94,
+      "breed_id": "tibetan_mastiff",
+      "canonical_name": "Tibetan mastiff",
+      "imagenet_id": "n02108551",
+      "source_directory": "n02108551-Tibetan_mastiff",
+      "image_count": 152
+    },
+    {
+      "stanford_label": 95,
+      "breed_id": "french_bulldog",
+      "canonical_name": "French bulldog",
+      "imagenet_id": "n02108915",
+      "source_directory": "n02108915-French_bulldog",
+      "image_count": 159
+    },
+    {
+      "stanford_label": 96,
+      "breed_id": "great_dane",
+      "canonical_name": "Great Dane",
+      "imagenet_id": "n02109047",
+      "source_directory": "n02109047-Great_Dane",
+      "image_count": 156
+    },
+    {
+      "stanford_label": 97,
+      "breed_id": "saint_bernard",
+      "canonical_name": "Saint Bernard",
+      "imagenet_id": "n02109525",
+      "source_directory": "n02109525-Saint_Bernard",
+      "image_count": 170
+    },
+    {
+      "stanford_label": 98,
+      "breed_id": "eskimo_dog",
+      "canonical_name": "Eskimo dog",
+      "imagenet_id": "n02109961",
+      "source_directory": "n02109961-Eskimo_dog",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 99,
+      "breed_id": "malamute",
+      "canonical_name": "malamute",
+      "imagenet_id": "n02110063",
+      "source_directory": "n02110063-malamute",
+      "image_count": 178
+    },
+    {
+      "stanford_label": 100,
+      "breed_id": "siberian_husky",
+      "canonical_name": "Siberian husky",
+      "imagenet_id": "n02110185",
+      "source_directory": "n02110185-Siberian_husky",
+      "image_count": 192
+    },
+    {
+      "stanford_label": 101,
+      "breed_id": "affenpinscher",
+      "canonical_name": "affenpinscher",
+      "imagenet_id": "n02110627",
+      "source_directory": "n02110627-affenpinscher",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 102,
+      "breed_id": "basenji",
+      "canonical_name": "basenji",
+      "imagenet_id": "n02110806",
+      "source_directory": "n02110806-basenji",
+      "image_count": 209
+    },
+    {
+      "stanford_label": 103,
+      "breed_id": "pug",
+      "canonical_name": "pug",
+      "imagenet_id": "n02110958",
+      "source_directory": "n02110958-pug",
+      "image_count": 200
+    },
+    {
+      "stanford_label": 104,
+      "breed_id": "leonberg",
+      "canonical_name": "Leonberg",
+      "imagenet_id": "n02111129",
+      "source_directory": "n02111129-Leonberg",
+      "image_count": 210
+    },
+    {
+      "stanford_label": 105,
+      "breed_id": "newfoundland",
+      "canonical_name": "Newfoundland",
+      "imagenet_id": "n02111277",
+      "source_directory": "n02111277-Newfoundland",
+      "image_count": 195
+    },
+    {
+      "stanford_label": 106,
+      "breed_id": "great_pyrenees",
+      "canonical_name": "Great Pyrenees",
+      "imagenet_id": "n02111500",
+      "source_directory": "n02111500-Great_Pyrenees",
+      "image_count": 213
+    },
+    {
+      "stanford_label": 107,
+      "breed_id": "samoyed",
+      "canonical_name": "Samoyed",
+      "imagenet_id": "n02111889",
+      "source_directory": "n02111889-Samoyed",
+      "image_count": 218
+    },
+    {
+      "stanford_label": 108,
+      "breed_id": "pomeranian",
+      "canonical_name": "Pomeranian",
+      "imagenet_id": "n02112018",
+      "source_directory": "n02112018-Pomeranian",
+      "image_count": 219
+    },
+    {
+      "stanford_label": 109,
+      "breed_id": "chow",
+      "canonical_name": "chow",
+      "imagenet_id": "n02112137",
+      "source_directory": "n02112137-chow",
+      "image_count": 196
+    },
+    {
+      "stanford_label": 110,
+      "breed_id": "keeshond",
+      "canonical_name": "keeshond",
+      "imagenet_id": "n02112350",
+      "source_directory": "n02112350-keeshond",
+      "image_count": 158
+    },
+    {
+      "stanford_label": 111,
+      "breed_id": "brabancon_griffon",
+      "canonical_name": "Brabancon griffon",
+      "imagenet_id": "n02112706",
+      "source_directory": "n02112706-Brabancon_griffon",
+      "image_count": 153
+    },
+    {
+      "stanford_label": 112,
+      "breed_id": "pembroke",
+      "canonical_name": "Pembroke",
+      "imagenet_id": "n02113023",
+      "source_directory": "n02113023-Pembroke",
+      "image_count": 181
+    },
+    {
+      "stanford_label": 113,
+      "breed_id": "cardigan",
+      "canonical_name": "Cardigan",
+      "imagenet_id": "n02113186",
+      "source_directory": "n02113186-Cardigan",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 114,
+      "breed_id": "toy_poodle",
+      "canonical_name": "toy poodle",
+      "imagenet_id": "n02113624",
+      "source_directory": "n02113624-toy_poodle",
+      "image_count": 151
+    },
+    {
+      "stanford_label": 115,
+      "breed_id": "miniature_poodle",
+      "canonical_name": "miniature poodle",
+      "imagenet_id": "n02113712",
+      "source_directory": "n02113712-miniature_poodle",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 116,
+      "breed_id": "standard_poodle",
+      "canonical_name": "standard poodle",
+      "imagenet_id": "n02113799",
+      "source_directory": "n02113799-standard_poodle",
+      "image_count": 159
+    },
+    {
+      "stanford_label": 117,
+      "breed_id": "mexican_hairless",
+      "canonical_name": "Mexican hairless",
+      "imagenet_id": "n02113978",
+      "source_directory": "n02113978-Mexican_hairless",
+      "image_count": 155
+    },
+    {
+      "stanford_label": 118,
+      "breed_id": "dingo",
+      "canonical_name": "dingo",
+      "imagenet_id": "n02115641",
+      "source_directory": "n02115641-dingo",
+      "image_count": 156
+    },
+    {
+      "stanford_label": 119,
+      "breed_id": "dhole",
+      "canonical_name": "dhole",
+      "imagenet_id": "n02115913",
+      "source_directory": "n02115913-dhole",
+      "image_count": 150
+    },
+    {
+      "stanford_label": 120,
+      "breed_id": "african_hunting_dog",
+      "canonical_name": "African hunting dog",
+      "imagenet_id": "n02116738",
+      "source_directory": "n02116738-African_hunting_dog",
+      "image_count": 169
+    }
+  ]
+}
