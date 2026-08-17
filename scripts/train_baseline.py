@@ -10,6 +10,11 @@ import torch
 from torch import nn
 from torch.optim import AdamW
 
+from app.core.persistence import (
+    persist_checkpoint,
+    persist_metrics,
+    persistence_status,
+)
 from app.models.baseline import build_resnet50_baseline
 from app.services.dataset import create_dataloader
 
@@ -137,6 +142,11 @@ def train_one_epoch(
                 f"loss={loss.item():.4f}"
             )
 
+    if total_examples == 0:
+        raise RuntimeError(
+            "Training processed zero examples."
+        )
+
     return {
         "loss": (
             total_loss
@@ -216,6 +226,11 @@ def evaluate(
 
         total_examples += batch_size
 
+    if total_examples == 0:
+        raise RuntimeError(
+            "Validation processed zero examples."
+        )
+
     return {
         "loss": (
             total_loss
@@ -238,7 +253,7 @@ def save_checkpoint(
     validation_accuracy: float,
 ) -> Path:
     """
-    Save model and optimizer state.
+    Save model and optimizer state locally.
     """
 
     CHECKPOINT_DIR.mkdir(
@@ -276,7 +291,7 @@ def save_history(
     ],
 ) -> None:
     """
-    Save training metrics as JSON.
+    Save training metrics as JSON locally.
     """
 
     HISTORY_PATH.parent.mkdir(
@@ -345,11 +360,18 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     """
     Train the first CanineVision AI baseline.
+
+    The best checkpoint is automatically copied
+    to persistent storage when available.
     """
 
     args = parse_args()
 
     device = choose_device()
+
+    storage_status = (
+        persistence_status()
+    )
 
     print(
         "CanineVision AI baseline training"
@@ -369,6 +391,10 @@ def main() -> int:
     print(
         f"Learning rate: "
         f"{args.learning_rate}"
+    )
+    print(
+        "Persistent storage:",
+        storage_status,
     )
 
     train_loader = create_dataloader(
@@ -407,6 +433,11 @@ def main() -> int:
     history: list[
         dict[str, Any]
     ] = []
+
+    best_validation_accuracy = -1.0
+    best_epoch: int | None = None
+    best_local_checkpoint: Path | None = None
+    best_persistent_checkpoint: Path | None = None
 
     for epoch in range(
         1,
@@ -450,6 +481,12 @@ def main() -> int:
             - start_time
         )
 
+        validation_accuracy = (
+            validation_metrics[
+                "accuracy"
+            ]
+        )
+
         print(
             "Train loss: "
             f"{train_metrics['loss']:.4f}"
@@ -467,7 +504,7 @@ def main() -> int:
 
         print(
             "Validation accuracy: "
-            f"{validation_metrics['accuracy']:.4f}"
+            f"{validation_accuracy:.4f}"
         )
 
         print(
@@ -480,9 +517,7 @@ def main() -> int:
                 optimizer=optimizer,
                 epoch=epoch,
                 validation_accuracy=(
-                    validation_metrics[
-                        "accuracy"
-                    ]
+                    validation_accuracy
                 ),
             )
         )
@@ -491,6 +526,54 @@ def main() -> int:
             f"Checkpoint: "
             f"{checkpoint_path}"
         )
+
+        is_best = (
+            validation_accuracy
+            > best_validation_accuracy
+        )
+
+        if is_best:
+            best_validation_accuracy = (
+                validation_accuracy
+            )
+
+            best_epoch = epoch
+            best_local_checkpoint = (
+                checkpoint_path
+            )
+
+            print(
+                "New best baseline model."
+            )
+
+            persistent_checkpoint = (
+                persist_checkpoint(
+                    source=checkpoint_path,
+                    destination_name=(
+                        "resnet50_best_frozen.pt"
+                    ),
+                )
+            )
+
+            if (
+                persistent_checkpoint
+                is not None
+            ):
+                best_persistent_checkpoint = (
+                    persistent_checkpoint
+                )
+
+                print(
+                    "Best checkpoint persisted:",
+                    persistent_checkpoint,
+                )
+
+            else:
+                print(
+                    "Persistent storage unavailable; "
+                    "best checkpoint remains "
+                    "local only."
+                )
 
         history.append(
             {
@@ -505,17 +588,66 @@ def main() -> int:
                 "checkpoint": str(
                     checkpoint_path
                 ),
+                "is_best": is_best,
             }
         )
 
-    save_history(
-        history
-    )
+        # Save history after every epoch so that
+        # metrics are not lost if training stops.
+        save_history(
+            history
+        )
+
+        persistent_history = (
+            persist_metrics(
+                source=HISTORY_PATH,
+                destination_name=(
+                    "baseline_training_history.json"
+                ),
+            )
+        )
+
+        if (
+            persistent_history
+            is not None
+        ):
+            print(
+                "Training history persisted:",
+                persistent_history,
+            )
 
     print()
     print(
         "Training run completed."
     )
+
+    print(
+        "Best validation accuracy:",
+        f"{best_validation_accuracy:.4f}"
+    )
+
+    print(
+        "Best epoch:",
+        best_epoch,
+    )
+
+    if (
+        best_local_checkpoint
+        is not None
+    ):
+        print(
+            "Best local checkpoint:",
+            best_local_checkpoint,
+        )
+
+    if (
+        best_persistent_checkpoint
+        is not None
+    ):
+        print(
+            "Best persistent checkpoint:",
+            best_persistent_checkpoint,
+        )
 
     return 0
 
