@@ -10,6 +10,11 @@ import torch
 from torch import nn
 from torch.optim import AdamW
 
+from app.core.persistence import (
+    persist_checkpoint,
+    persist_metrics,
+    persistence_status,
+)
 from app.models.baseline import build_resnet50_baseline
 from app.services.dataset import create_dataloader
 
@@ -38,6 +43,10 @@ HISTORY_PATH = (
 
 
 def choose_device() -> torch.device:
+    """
+    Use CUDA when available, otherwise CPU.
+    """
+
     if torch.cuda.is_available():
         return torch.device("cuda")
 
@@ -49,6 +58,10 @@ def load_checkpoint(
     checkpoint_path: Path,
     device: torch.device,
 ) -> dict[str, Any]:
+    """
+    Load the frozen-backbone baseline checkpoint.
+    """
+
     if not checkpoint_path.exists():
         raise FileNotFoundError(
             f"Checkpoint not found: {checkpoint_path}"
@@ -70,7 +83,7 @@ def configure_finetuning(
     model: nn.Module,
 ) -> None:
     """
-    Freeze the early ResNet layers and unfreeze only:
+    Freeze early ResNet layers and unfreeze:
 
     - layer4
     - final classifier head
@@ -89,6 +102,10 @@ def configure_finetuning(
 def count_trainable_parameters(
     model: nn.Module,
 ) -> int:
+    """
+    Count parameters updated during fine-tuning.
+    """
+
     return sum(
         parameter.numel()
         for parameter in model.parameters()
@@ -103,6 +120,9 @@ def train_one_epoch(
     criterion: nn.Module,
     device: torch.device,
 ) -> dict[str, float]:
+    """
+    Fine-tune the model for one epoch.
+    """
 
     model.train()
 
@@ -162,6 +182,11 @@ def train_one_epoch(
                 f"loss={loss.item():.4f}"
             )
 
+    if total_examples == 0:
+        raise RuntimeError(
+            "Fine-tuning processed zero examples."
+        )
+
     return {
         "loss": total_loss / total_examples,
         "accuracy": total_correct / total_examples,
@@ -176,6 +201,9 @@ def evaluate(
     criterion: nn.Module,
     device: torch.device,
 ) -> dict[str, float]:
+    """
+    Evaluate without updating model weights.
+    """
 
     model.eval()
 
@@ -220,6 +248,11 @@ def evaluate(
 
         total_examples += batch_size
 
+    if total_examples == 0:
+        raise RuntimeError(
+            "Validation processed zero examples."
+        )
+
     return {
         "loss": total_loss / total_examples,
         "accuracy": total_correct / total_examples,
@@ -233,7 +266,13 @@ def save_checkpoint(
     epoch: int,
     validation_accuracy: float,
     is_best: bool,
-) -> Path:
+) -> tuple[Path, Path | None]:
+    """
+    Save the epoch checkpoint locally.
+
+    When this is the best epoch, also save a
+    stable local best-checkpoint filename.
+    """
 
     FINETUNE_CHECKPOINT_DIR.mkdir(
         parents=True,
@@ -261,6 +300,8 @@ def save_checkpoint(
         epoch_path,
     )
 
+    best_path: Path | None = None
+
     if is_best:
         best_path = (
             FINETUNE_CHECKPOINT_DIR
@@ -272,12 +313,15 @@ def save_checkpoint(
             best_path,
         )
 
-    return epoch_path
+    return epoch_path, best_path
 
 
 def save_history(
     history: list[dict[str, Any]],
 ) -> None:
+    """
+    Save fine-tuning history locally.
+    """
 
     HISTORY_PATH.parent.mkdir(
         parents=True,
@@ -298,6 +342,9 @@ def save_history(
 
 
 def parse_args() -> argparse.Namespace:
+    """
+    Parse fine-tuning command-line options.
+    """
 
     parser = argparse.ArgumentParser(
         description=(
@@ -334,10 +381,21 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    """
+    Fine-tune layer4 and the classifier head.
+
+    Best checkpoints and training history are
+    automatically persisted when persistent
+    storage is available.
+    """
 
     args = parse_args()
 
     device = choose_device()
+
+    storage_status = (
+        persistence_status()
+    )
 
     print(
         "CanineVision AI ResNet-50 fine-tuning"
@@ -364,6 +422,11 @@ def main() -> int:
 
     print(
         f"Learning rate: {args.learning_rate}"
+    )
+
+    print(
+        "Persistent storage:",
+        storage_status,
     )
 
     train_loader = create_dataloader(
@@ -429,6 +492,9 @@ def main() -> int:
     )
 
     best_validation_accuracy = -1.0
+    best_epoch: int | None = None
+    best_local_checkpoint: Path | None = None
+    best_persistent_checkpoint: Path | None = None
 
     history: list[
         dict[str, Any]
@@ -487,6 +553,8 @@ def main() -> int:
                 validation_accuracy
             )
 
+            best_epoch = epoch
+
         print(
             "Train loss:",
             f"{train_metrics['loss']:.4f}"
@@ -511,27 +579,68 @@ def main() -> int:
             f"Epoch time: {duration:.1f}s"
         )
 
-        checkpoint_path = (
-            save_checkpoint(
-                model=model,
-                optimizer=optimizer,
-                epoch=epoch,
-                validation_accuracy=(
-                    validation_accuracy
-                ),
-                is_best=is_best,
-            )
+        (
+            checkpoint_path,
+            local_best_path,
+        ) = save_checkpoint(
+            model=model,
+            optimizer=optimizer,
+            epoch=epoch,
+            validation_accuracy=(
+                validation_accuracy
+            ),
+            is_best=is_best,
         )
 
         print(
             "Checkpoint:",
-            checkpoint_path
+            checkpoint_path,
         )
 
         if is_best:
             print(
                 "New best fine-tuned model."
             )
+
+            if local_best_path is None:
+                raise RuntimeError(
+                    "Best checkpoint path "
+                    "was not created."
+                )
+
+            best_local_checkpoint = (
+                local_best_path
+            )
+
+            persistent_checkpoint = (
+                persist_checkpoint(
+                    source=local_best_path,
+                    destination_name=(
+                        "resnet50_finetune_best.pt"
+                    ),
+                )
+            )
+
+            if (
+                persistent_checkpoint
+                is not None
+            ):
+                best_persistent_checkpoint = (
+                    persistent_checkpoint
+                )
+
+                print(
+                    "Best fine-tuned checkpoint "
+                    "persisted:",
+                    persistent_checkpoint,
+                )
+
+            else:
+                print(
+                    "Persistent storage unavailable; "
+                    "best fine-tuned checkpoint "
+                    "remains local only."
+                )
 
         history.append(
             {
@@ -546,12 +655,33 @@ def main() -> int:
                 "checkpoint": str(
                     checkpoint_path
                 ),
+                "is_best": is_best,
             }
         )
 
-    save_history(
-        history
-    )
+        # Save and persist history after every
+        # epoch so partial runs are recoverable.
+        save_history(
+            history
+        )
+
+        persistent_history = (
+            persist_metrics(
+                source=HISTORY_PATH,
+                destination_name=(
+                    "finetune_training_history.json"
+                ),
+            )
+        )
+
+        if (
+            persistent_history
+            is not None
+        ):
+            print(
+                "Fine-tuning history persisted:",
+                persistent_history,
+            )
 
     print()
     print(
@@ -562,6 +692,29 @@ def main() -> int:
         "Best validation accuracy:",
         f"{best_validation_accuracy:.4f}"
     )
+
+    print(
+        "Best epoch:",
+        best_epoch,
+    )
+
+    if (
+        best_local_checkpoint
+        is not None
+    ):
+        print(
+            "Best local checkpoint:",
+            best_local_checkpoint,
+        )
+
+    if (
+        best_persistent_checkpoint
+        is not None
+    ):
+        print(
+            "Best persistent checkpoint:",
+            best_persistent_checkpoint,
+        )
 
     return 0
 
